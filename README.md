@@ -1,4 +1,4 @@
-# Proposal: The Evolution of Boulder Apartment Architecture (2010–2025)
+# The Evolution of Boulder Apartment Architecture (2010–2025)
 
 **Course:** Web Data Science (INFO 4617/5617)  
 **Date:** October 25, 2026  
