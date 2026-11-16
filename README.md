@@ -11,11 +11,11 @@ How have the physical scale, structural dimensions, and architectural capacity c
 
 ## Data
 * **Source:** City of Boulder Enterprise GIS MapServer Address Points Endpoint (`https://gis.bouldercolorado.gov/`).
-* **Collection Timestamp:** Collected via automated script on November 8, 2026.
-* **Record Count:** Sample batch of municipal address and multi-family unit location records.
+* **Collection Date:** Collected via automated script on November 8, 2026.
+* **Record Count:** 50 raw municipal address and multi-family unit location records in the initial collection batch, filtered and cleaned into a tidy dataset.
 * **What was left out of the repository and why:** 
-  * The full raw GIS feature JSON containing extensive spatial coordinates and geometry arrays has been excluded from version control to adhere to repository size limits. 
-  * A sanitized, tidy sample (`data/cleaned_permits_sample.csv`) containing core address attributes (`FULLADDR`, `STREETNAME`, `UNITID`) is provided to demonstrate the structured data pipeline.
+  * The full raw JSON response file (`raw_permits.json`) containing large spatial geometry arrays has been excluded from public version control to respect repository size guidelines. 
+  * A sanitized, tidy sample (`data/cleaned_permits_sample.csv`) containing core address attributes (`FULLADDR`, `STREETNAME`, `UNITID`, `ZIP5`) is provided in the repository to demonstrate the data structure and cleaning output without bloating the repo or exposing unnecessary geometry overhead.
 
 ## Methods
 *Approach:* Programmatic REST API data extraction via Python (`requests`, `pandas`, `geopandas`), time-series aggregation, and statistical distribution comparison.
